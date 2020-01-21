@@ -1,0 +1,1 @@
+docker run -d --net docker_default -p 8080:80 -e REGISTRY_URL=http://my-url:5000 -e DELETE_IMAGES=true -e REGISTRY_TITLE="My registry" --link registry --name registry-ui joxit/docker-registry-ui:static
